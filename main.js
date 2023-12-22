@@ -17,8 +17,26 @@ for (let i = 1; i <= 7; i++) {
     wordsArray.push(document.getElementById("word" + i));
 }
 
+// Detecting the selected language
+const languageSelector = document.querySelector(".languageSelector");
+const buttons = document.querySelectorAll(".languageSelector button");
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {        
+        language = button.getAttribute("language");
+
+        if (language === "turkish") window.location.href = "index.html";
+        else if (language === "english") window.location.href = "indexEN.html"; 
+    
+    });
+});
+
+activeLanguage = languageSelector.querySelector(".activeLanguage").getAttribute("language");
+if (activeLanguage === "turkish")   var wordsFile = 'words/wordsTR.json';
+else if(activeLanguage === "english")   var wordsFile = 'words/wordsEN.json';
+
 // localhost (node localhost.js)
-fetch('words.json')
+fetch(wordsFile)
     .then(response => response.json())
     .then(data => {
 
@@ -158,7 +176,7 @@ function reset(){
     })
 
     // Creating random words
-    fetch('words.json')
+    fetch(wordsFile)
     .then(response => response.json())
     .then(data => {
         const words = data.words;
