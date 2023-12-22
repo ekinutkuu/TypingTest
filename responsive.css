@@ -1,0 +1,46 @@
+@media only screen and (max-width: 600px){
+    table{
+        width: 100px;
+        box-shadow: 3px 3px 3px;
+    }
+    .leftSide input{
+        font-size: 13px;
+        width: 90px;
+    }
+    #wordsTable tr td{
+        font-size: 18px;
+    }
+    #resultTable tr{
+        width: 100px;
+    }
+    #resultTable tr td{
+        width: 100%;
+        font-size: 10px;
+    }
+    #resultTable #resultTitle{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 890px){
+    table{
+        width: 150px;
+    }
+    .leftSide input{
+        font-size: 15px;
+        width: 125px;
+    }
+    #wordsTable tr td{
+        font-size: 18px;
+    }
+    #resultTable tr{
+        width: 100px;
+    }
+    #resultTable tr td{
+        width: 100%;
+        font-size: 10px;
+    }
+    #resultTable #resultTitle{
+        font-size: 14px;
+    }
+}

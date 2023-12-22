@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+</head>
+<body>
+    
+    <div class="center" id="topBar">
+        <img src="images/logo.png">
+    </div>
+
+    <div class="center" id="wrapper">
+        <div class="leftSide">
+            <input type="text" id="countdown" value="1:00" disabled>
+            <button onclick="reset()">
+                <span class="button__icon">
+                    <ion-icon name="refresh-outline"></ion-icon>
+                </span>
+            </button>
+        </div>
+        <div class="middle">
+            <table id="wordsTable">
+                <tr><td id="word1">word 1</td></tr>
+                <tr><td id="word2">word 2</td></tr>
+                <tr><td id="word3">word 3</td></tr>
+                <tr><td id="word4">word 4</td></tr>
+                <tr><td id="word5">word 5</td></tr>
+                <tr><td id="word6">word 6</td></tr>
+                <tr><td id="word7">word 7</td></tr>
+            </table>
+        </div>
+        <div class="rightSide">
+            <table id="resultTable">
+                <tr><td id="resultTitle">Results</td></tr>
+                <tr><td id="wpmResult"></td></tr>
+                <tr><td id="keystrokesText"></td><td id="keystrokesResult"></td></tr>
+                <tr><td id="accuracyText"></td><td id="accuracyResult"></td></tr>
+                <tr><td id="correctWordsText"></td><td id="correctWordsResult"></td></tr>
+                <tr><td id="wrongWordsText"></td><td id="wrongWordsResult"></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <input type="text" class="center" id="textBox" placeholder="Start typing...">
+
+
+<script src="main.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+</html>
