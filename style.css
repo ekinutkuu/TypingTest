@@ -151,3 +151,49 @@ table tr td{
     color: #bcdef882;
     font-size: 15px;
 }
+
+/* Language Selection */
+#topBar{
+    display: flex;
+    flex-direction: row;
+}
+
+#topBar img{
+    margin-left: calc(50% - 100px);
+}
+
+.languageSelector{
+    display: flex;
+    gap: 20px;
+}
+
+.languageSelector button{
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+    font-family: 'Exo';
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 25px;
+    border: 1px solid #bcdef8;
+    box-shadow: 1px 1px 4px #bcdef8;
+    background-color: #0c131b;
+    color: #bcdef8;
+    transition: 0.35s ease;
+}
+
+.languageSelector button:hover{
+    cursor: pointer;
+    background-color: #bcdef8;
+    color: #0c131b;
+}
+
+.languageSelector button:not(.activeLanguage):hover{
+    transform: scale(1.08);
+}
+
+.languageSelector button.activeLanguage{
+    border-radius: 10px;
+    background-color: #bcdef8;
+    color: #0c131b;
+}
