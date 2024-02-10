@@ -34,6 +34,9 @@ node localhost.js
 ## Screenshots
 
 <div align="center" style="width:100%;display:flex;justify-content:space-between;">
-  <img width="40%" src="https://github.com/ekinutkuu/TypingTest/blob/master/screenshots/1.png" align="center" alt="screenshot" />
-  <img width="40%" src="https://github.com/ekinutkuu/TypingTest/blob/master/screenshots/2.png" align="center" alt="screenshot" />
+  <img width="90%" src="https://github.com/ekinutkuu/TypingTest/blob/master/screenshots/1.png" align="center" alt="screenshot" />
+</div>
+<br>
+<div align="center" style="width:100%;display:flex;justify-content:space-between;">
+  <img width="90%" src="https://github.com/ekinutkuu/TypingTest/blob/master/screenshots/2.png" align="center" alt="screenshot" />
 </div>
